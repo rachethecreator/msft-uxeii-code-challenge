@@ -1,25 +1,63 @@
 .App {
-  text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff8f2;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 47px 90px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  h2 {
+    text-transform: capitalize;
+    margin: 0;
+  }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  height: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.Form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: fit-content;
+}
+
+.Search {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-top: 10px;
+  height: fit-content;
+}
+
+.Breed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.Menu {
+  margin: 0;
+  padding: 0;
+  span {
+    text-transform: capitalize;
+    margin-right: 16px;
+  }
+  li {
+    list-style: none;
+  }
 }
 
 .heart {
